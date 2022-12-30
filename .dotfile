@@ -1,0 +1,45 @@
+# Brew
+if [[ $(uname -m) == 'arm64' ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Editor
+export EDITOR='micro'
+
+# ZSH
+ZSH_THEME="nev"
+
+# Surpressing change to ZSH Deprecation Warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Coloring for ls   
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Coloring for Shell Line
+#export PS1="\[\033[38;5;87m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;75m\]\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;222m\]\w\[$(tput sgr0)\] \\$ \[$(tput sgr0)\]"
+
+# cd aliases
+alias cdgh='cd ~/github'
+alias cddown='cd ~/Downloads'
+alias cdic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
+
+# ssh aliases
+alias sshmc='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@minecraft.ttl0.net'
+alias sshdev='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nev.ttl0.net'
+alias sshpi='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 ubuntu@192.168.99.94'
+alias sshnev2='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nev2.ttl0.net'
+alias sshnev3='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nev3.ttl0.net'
+alias sshdb='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nevdb.ttl0.net'
+alias ssharch='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nevarch.ttl0.net'
+
+# youtube-dl aliases
+alias ytmp3='youtube-dl --yes-playlist --audio-quality 0 --prefer-ffmpeg --extract-audio --audio-format mp3'
+alias ytmp4='youtube-dl --yes-playlist --audio-quality 0 --prefer-ffmpeg -f bestvideo+bestuadio[ext=mp3]/bestvideo/best 
+--recode-video mp4'
+alias ytpmp3='yt-dlp --yes-playlist --audio-quality 0 --prefer-ffmpeg --extract-audio --audio-format mp3'
+alias ytpmp4='yt-dlp --yes-playlist --audio-quality 0 --prefer-ffmpeg -f 
+bestvideo+bestuadio[ext=mp3]/bestvideo+bestaudio/best --recode-video mp4'
+
+# NTFY Variables
+export NTFY_USER="user:password"

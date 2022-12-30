@@ -1,0 +1,19 @@
+[MASTER]
+persistent=no
+indent-string="    "
+
+[MESSAGES CONTROL]
+disable=unspecified-encoding,
+		wrong-import-order,
+		line-too-long,
+		invalid-name,
+		missing-module-docstring,
+		missing-class-docstring,
+		missing-function-docstring,
+		missing-docstring,
+		protected-access,
+		trailing-whitespace,
+		anomalous-backslash-in-string,
+		assigning-non-slot,
+		redefined-outer-name
+
