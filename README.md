@@ -6,6 +6,8 @@ See [github.com/nevalicjus/apps](https://github.com/nevalicjus/apps) for my smal
 
 See [github.com/nevalicjus/play](https://github.com/nevalicjus/play) for my scripts
 
+See [github.com/nevalicjus/licenses](https://github.com/nevalicjus/licenses) for my personal licenses
+
 ---
 
 ```
