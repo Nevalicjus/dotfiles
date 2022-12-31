@@ -43,3 +43,6 @@ bestvideo+bestuadio[ext=mp3]/bestvideo+bestaudio/best --recode-video mp4'
 
 # NTFY Variables
 export NTFY_USER="user:password"
+
+# Onefetch alias
+alias ofetch="onefetch -T programming markup prose data"
