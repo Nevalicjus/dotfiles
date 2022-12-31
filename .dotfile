@@ -46,3 +46,6 @@ export NTFY_USER="user:password"
 
 # Onefetch alias
 alias ofetch="onefetch -T programming markup prose data"
+
+# nevlock alias
+alias nevlock="chflags -R nouchg" # chflags -R nouchg /PATH/TO/DIRECTORY/WITH/LOCKED/FILES/
