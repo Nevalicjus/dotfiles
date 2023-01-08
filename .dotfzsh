@@ -1,0 +1,57 @@
+# Brew
+if [[ $(uname -m) == 'arm64' ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Editor
+export EDITOR='micro'
+
+# ZSH
+ZSH_THEME="nev"
+
+# Coloring for ls   
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# cd aliases
+alias cdgh='cd ~/github'
+alias cddown='cd ~/Downloads'
+alias cdic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
+
+# ssh aliases
+alias sshmc='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@minecraft.ttl0.net'
+alias sshdev='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nev.ttl0.net'
+alias sshpi='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 ubuntu@192.168.99.94'
+alias sshnev2='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nev2.ttl0.net'
+alias sshnev3='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nev3.ttl0.net'
+alias sshdb='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nevdb.ttl0.net'
+alias ssharch='ssh -o ServerAliveInterval=180 -o ServerAliveCountMax=2 maciej@nevarch.ttl0.net'
+
+# youtube-dl aliases
+function ytmp3 {
+	youtube-dl --yes-playlist --audio-quality 0 --prefer-ffmpeg --extract-audio --audio-format mp3 "$1"
+}
+alias ytmp3="noglob ytmp3"
+function ytmp4 {
+	youtube-dl --yes-playlist --audio-quality 0 --prefer-ffmpeg -f "bestvideo+bestuadio[ext=mp3]/bestvideo/best" --recode-video mp4 "$1"
+}
+alias ytmp4="noglob ytmp4"
+function ytpmp3 {
+	yt-dlp --yes-playlist --audio-quality 0 --prefer-ffmpeg --extract-audio --audio-format mp3 "$1"
+}
+alias ytpmp3="noglob ytpmp3"
+function ytpmp4 {
+	yt-dlp --yes-playlist --audio-quality 0 --prefer-ffmpeg -f "bestvideo+bestuadio[ext=mp3]/bestvideo+bestaudio/best" --recode-video mp4 "$1"
+}
+alias ytpmp4="noglob ytpmp4"
+
+# NTFY Variables
+export NTFY_USER="user:password"
+
+# Onefetch alias
+alias ofetch="onefetch -T programming markup prose data"
+
+# nev aliases
+alias nevunlock="chflags -R nouchg" # chflags -R nouchg /PATH/TO/DIRECTORY/WITH/LOCKED/FILES/
+alias nevtar="gtar -I pigz -cvf"
+alias nevuntar="gtar -I pigz -xvf"

@@ -3,7 +3,6 @@
 
 # Copy Configuration Files
 echo "Copying Configurations"
-cp .dotfile $HOME/
 cp .gitconfig $HOME/
 cp .pylintrc $HOME/
 cp .pypirc $HOME/
@@ -40,3 +39,4 @@ fi
 # Outro
 echo "Remember to import your gpg and ssh keys"
 echo "Also remember to copy your ntfy user:password to $HOME/.dotfile and your pypi token to $HOME/.pypirc"
+echo "Run \"cp .dotfzsh $HOME/.dotfile\" if you are running zsh or \"cp .dotfbash $HOME/.dotfile\" if you are running bash"
