@@ -46,5 +46,5 @@ alias ofetch="onefetch -T programming markup prose data"
 
 # nev aliases
 alias nevunlock="chflags -R nouchg" # chflags -R nouchg /PATH/TO/DIRECTORY/WITH/LOCKED/FILES/
-alias nevtar="gtar -I pigz -cvf"
-alias nevuntar="gtar -I pigz -xvf"
+alias nevtar="tar -use-compress-program=pigz -cvf"
+alias nevuntar="tar -use-compress-program=pigz -xvf"
